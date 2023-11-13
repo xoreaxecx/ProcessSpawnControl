@@ -30,7 +30,8 @@ Exclusions specified using the "-ex" key are added to the
 existing defaults and do not replace them.  
 
 <details>
-  <summary>Exclusions example</summary>
+  <summary>Exclusions example</summary>  
+  
   ```
   PSC.exe -tp "path\to\target.exe" -ex "path\to\exclusions.txt"
   ```
@@ -48,17 +49,18 @@ PSC.exe -tp "C:\tmp\target.exe" -ta "-a arg" -pp "C:\WINDOWS\system32\notepad.ex
 <details>
   <summary>Spoiler</summary>
   
-  Parent process is running. Target process created and ready to run.
+  Parent process is running. Target process created and ready to run.  
   ![created](https://github.com/xoreaxecx/ProcessSpawnControl/blob/main/_pics/created_console.png)  
+  
   ![created](https://github.com/xoreaxecx/ProcessSpawnControl/blob/main/_pics/created_processes.png)  
   
-  Target process is running and has created a subprocess.
+  Target process is running and has created a subprocess.  
   ![suspended](https://github.com/xoreaxecx/ProcessSpawnControl/blob/main/_pics/suspended.png)  
 </details>
 
 ---  
 
-### Help:  
+### Help  
 ```
 PSC.exe -tp "target.exe" [-ta "-x arg"] [-pp "parent.exe"] [-pa "-x arg"] [-pi PID]
 [-ex "exclusions.txt"] [-ca] [-ae] [-nc] [-ao]
@@ -77,7 +79,7 @@ PSC.exe -tp "target.exe" [-ta "-x arg"] [-pp "parent.exe"] [-pa "-x arg"] [-pi P
 
 ---  
 
-### Notes:
+### Notes
 "-ae" key is used to run the target as unelevated (unless you are working under  
 an admin account and Explorer.exe is not running with admin privileges).  
 "-nc" key is used if the text color is difficult to  
